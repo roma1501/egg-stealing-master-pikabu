@@ -41,7 +41,7 @@
       var self = this;
       var bar = document.querySelector('#loadBar > i');
       var tip = document.getElementById('loadTip');
-      tip.textContent = SE.t('loading.title');
+      SE.I18N.setLang('ru'); tip.textContent = SE.t('loading.title');
       SE.Audio.init();
       SE.Audio.prepareMusic();
       SE.Platform.onPause = function () { self.setPaused(true, 'platform'); };
